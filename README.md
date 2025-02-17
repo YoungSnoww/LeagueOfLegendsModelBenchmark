@@ -22,18 +22,11 @@ The group is made of:
 - Timothée Lesellier, PM - tl456@kent.ac.uk
 
 **Datasets:**
-The dataset used for this project comes from [Kaggle](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-diamond-ranked-games-10-min), it will include in-game information such as:
-- blueWardsPlaced
-- blueWardsDestroyed
-- blueFirstBlood
-- blueKills
-- blueDeaths
-- blueAssists
 
-**Note:** The same concepts applies for the red Team.
+This datasets was created by scraping the official RIOT API. 
+The data is composed of 200,000 games with 109 features each. The features include in-game statistics such as kills, deaths, assists, gold earned, and other relevant information. 
 
-Well will also be able to fetch information from the official RIOT API. Gaining access to a huge amount of various games information if needed.
-
+[Url](https://epitechfr-my.sharepoint.com/:f:/g/personal/hugo_galan_epitech_eu/Ersjm19Jx6dJroDmOviZyssBvaW9g4kKFzqm0-2fxcz46A?e=NW2ezW)
 
 **Models to Benchmark:**
 The following models will be benchmarked to predict the outcome of LoL games:
