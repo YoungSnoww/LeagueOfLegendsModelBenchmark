@@ -59,8 +59,7 @@ The performance of each model will be evaluated using the following metrics:
 - **F1-Score**: The harmonic mean of precision and recall.
 - **AUC-ROC**: The area under the Receiver Operating Characteristic curve to evaluate the model's ability to distinguish between positive and negative outcomes.
 - **Confusion Matrix**: To visualize the performance of the model in terms of true positives, true negatives, false positives, and false negatives.
-- **Brier Score**: Added later to reduce the difference bewtween Classifier and Regressor, the mean squared difference between predicted probabilities and the actual outcomes.
-
+- **Brier Score**: Added later to reduce the difference between Classifier and Regressor, the mean squared difference between predicted probabilities and the actual outcomes.
 ---
 
 ## 5. Methodology
