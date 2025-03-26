@@ -112,7 +112,7 @@ During the training process, we used the following steps:
 
 Now it is important to talk about the issue encountered during the training process. The main issue was the time needed to train some of the models, such as the **K-NN**, the **SVM**, also the **ANN**, leading the dataset to be rework to be less complex but still relevant.
 
-New features were create, like `neutralObjkills` which was created to represent the number of neutral objectives killed by each team, `gold_diff`, `minion_diff`, and `level_diff`.
+New features were created, like `neutralObjkills` which was created to represent the number of neutral objectives killed by each team, `gold_diff`, `minion_diff`, and `level_diff`.
 Those features were created to give us a better understanding of the game while reducing the number of features.
 
 **New Correlation Matrix**:
