@@ -287,7 +287,7 @@ But, even though the findings are good, there is no huge difference in models pe
 
 When plotting the prediction minute after minute, the accuracy of the models are varying a lot, let's breaking it down:
 - 1. **First minutes of the game**: The accuracy is close to random, this is because the game is still in the early stage and the outcome is still uncertain.
-- 2. **Mid-game (around 20-30 minutes)**: The accuracy starts to increase as the game progresses and the outcome becomes more predictable. It is important to note that most games end around the 30-minute mark, which is reflected in the accuracy. It makes sense in itself since the diffference between the two teams is getting bigger and bigger.
+- 2. **Mid-game (around 20-30 minutes)**: The accuracy starts to increase as the game progresses and the outcome becomes more predictable. It is important to note that most games end around the 30-minute mark, which is reflected in the accuracy. It makes sense in itself since the difference between the two teams is getting bigger and bigger.
 - 3. **Late-game (after 30 minutes)**: The accuracy starts to decrease as the game reaches the late stage, where the outcome becomes more uncertain due to the catch-up mechanics and the potential for comebacks. There is the Elder Dragon which plays a huge role in this part of the game, the team which will complete this objective, by killing the dragon, will have a huge advantage over the other team in term of offensive power. Which can lead to a comeback.
 
 ### 6.2 Recommendations
