@@ -142,8 +142,7 @@ Such as:
 - **Brier Score**: The mean squared difference between predicted probabilities and the actual outcomes.
 - **Confusion Matrix**: To visualize the performance of the model in terms of true positives, true negatives, false positives, and false negatives.
 
-**Note**: For readability, the evaluation process of each model can be seen in the `deep_learning` and `machine_learning` folders. The confusion matrix of the models wil not be shown here, but can be found in the `deep_learning` and `machine_learning` folders.
-
+**Note**: For readability, the evaluation process of each model can be seen in the `deep_learning` and `machine_learning` folders. The confusion matrix of the models will not be shown here, but can be found in the `deep_learning` and `machine_learning` folders.
 ### 5.6 Comparison
 After having evaluated the models, we compared their performance using the metrics defined in the previous section. The comparison was done to identify the most accurate and efficient model for predicting LoL game outcomes.
 ![comparison](.doc/metrics_comparaison.png)
