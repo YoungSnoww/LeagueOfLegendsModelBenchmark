@@ -306,8 +306,7 @@ Based on the work done, we can recommend the following:
 - **KNN** is also a strong candidate, particularly for its high AUC-ROC and competitive performance across other metrics.
 - **Random Forest** can be considered for its balanced performance and high AUC-ROC.
 
-Further analysis could be done by adding more feature engineering to try and get more insight on the game. But there is a limit to what we can do, since the game is played by humans and the outcome can be unpredictable. There no way, for the moment, to get information on the players' mood, their communication, etc. Which can have a huge impact on the game.
-
+Further analysis could be done by adding more feature engineering to try and get more insight on the game. But there is a limit to what we can do, since the game is played by humans and the outcome can be unpredictable. There is no way, for the moment, to get information on the players' mood, their communication, etc. Which can have a huge impact on the game.
 ## 7. Deliverables
 
 ### 7.1 Benchmarking Report
