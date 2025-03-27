@@ -106,7 +106,7 @@ We had to train 10 models to compare them. The training process was overall the 
 
 During the training process, we used the following steps:
 
-1. **Model Training**: Using the splitted data, we trained the model using the training set. Then the model was evaluted to see its "default" performance.
+1. **Model Training**: Using the splitted data, we trained the model using the training set. Then the model was evaluated to see its "default" performance.
 2. **Hyperparameter Tuning**: We performed hyperparameter tuning using `GridSearchCV` from `sklearn.model_selection` to find the best hyperparameters for each model.
 3. **Model Evaluation**: We evaluated the model using the testing set and the metrics defined in the previous section.
 
