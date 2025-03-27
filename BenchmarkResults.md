@@ -66,7 +66,7 @@ The performance of each model will be evaluated using the following metrics:
 
 ### 5.1 Data Gathering
 
-We started by collecting the data from the RIOT API. In details, the data was made of games from the best ranking Tiers made of 1. Challenger, 2. GrandMaster, 3. Master. In total we got 6 587 262 games with 109 features each. The features include in-game statistics such as kills, deaths, assists, gold earned, and other relevant information.
+We started by collecting the data from the RIOT API. In details, the data was made of games from the best ranking Tiers made of 1. Challenger, 2. GrandMaster, 3. Master. In total we got 6 587 262 minutes of games with 109 features each. The features include in-game statistics such as kills, deaths, assists, gold earned, and other relevant information.
 
 
 ### 5.2 Data Preprocessing
@@ -230,6 +230,14 @@ The benchmarking of various machine learning and deep learning models for predic
 - **AUC-ROC**: 0.7418
 - **Brier Score**: 0.2576
 
+#### 11. AdaBoost
+- **Accuracy**: 0.738
+- **Precision**: 0.7358
+- **Recall**: 0.7123
+- **F1-Score**: 0.7239
+- **AUC-ROC**: 0.7371
+- **Brier Score**: 0.262
+
 #### Model Performance Overview
 
 Based on the benchmarking results of various machine learning models for predicting League of Legends game outcomes, the following conclusions can be drawn:
@@ -238,14 +246,14 @@ Based on the benchmarking results of various machine learning models for predict
 Most models demonstrated strong performance, with accuracies ranging from 0.6958 to 0.7572. The Logistic Regression model stood out with the highest accuracy of 0.7572, closely followed by the KNN model with an accuracy of 0.7477.
 The Naive Bayes model had the lowest accuracy at 0.6958, indicating it may not be the best choice for this prediction task.
 
-2. **Precision** **and** **Recall**:
+1. **Precision** **and** **Recall**:
 Precision values were generally high, with the SVM Classifier achieving the highest precision of 0.7621. However, the recall values varied more significantly. The Logistic Regression model had the highest recall of 0.7447, while the Naive Bayes model had the lowest recall of 0.6035.
 The F1-Score, which balances precision and recall, was highest for the Logistic Regression model at 0.7501, followed by the KNN model at 0.7301. The Naive Bayes model had the lowest F1-Score of 0.6605.
 
-3. **AUC-ROC**:
+1. **AUC-ROC**:
 The AUC-ROC scores, which measure the model's ability to distinguish between positive and negative outcomes, were generally high. The Logistic Regression model had the highest AUC-ROC of 0.8433, followed by the KNN model at 0.8384. The Naive Bayes model had the lowest AUC-ROC of 0.6940.
 
-4. **Brier** **Score**:
+1. **Brier** **Score**:
 The Brier Score, which measures the mean squared difference between predicted probabilities and actual outcomes, was lowest for the Gradient Boosting models (XGBoost and LightGBM) at 0.1690 and 0.1694, respectively, indicating better calibrated predictions. The CatBoost model had the highest Brier Score of 0.2673.
 
 ### Recommendations:
@@ -283,11 +291,14 @@ But, even though the findings are good, there is no huge difference in models pe
 ![xgboost](.doc/xgboostclassifier.png)
 ![xgboost](.doc/xgboostregressor.png)
 ![ann](.doc/ann.png)
+![logistic](.doc/logisticregression.png)
 
 When plotting the prediction minute after minute, the accuracy of the models is varying a lot, let's break it down:
 - 1. **First minutes of the game**: The accuracy is close to random, this is because the game is still in the early stage and the outcome is still uncertain.
 - 2. **Mid-game (around 20-30 minutes)**: The accuracy starts to increase as the game progresses and the outcome becomes more predictable. It is important to note that most games end around the 30-minute mark, which is reflected in the accuracy. It makes sense in itself since the difference between the two teams is getting bigger and bigger.
 - 3. **Late-game (after 30 minutes)**: The accuracy starts to decrease as the game reaches the late stage, where the outcome becomes more uncertain due to the catch-up mechanics and the potential for comebacks. There is the Elder Dragon which plays a huge role in this part of the game, the team which will complete this objective, by killing the dragon, will have a huge advantage over the other team in term of offensive power. Which can lead to a comeback.
+
+Furthermore, it is important to note that, the results of the evaluation depends on the dataset used. In the case of the **Logistic Regression**, the model is trained on the challenger dataset, meaning it is trained on the games from the best players. This can lead to a bias in the model, since the games are not the same as the one played by the average player. This can lead to a huge difference in the model's performance when used on a different dataset. This behaviour was seen for every models, which allow us to make the following claim, the better the players, the better the model's performance. This is due to the fact that the games are more predictable, the players are more skilled, and the outcome is more certain.
 
 ### 6.2 Recommendations
 Based on the work done, we can recommend the following:
