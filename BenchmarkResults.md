@@ -116,8 +116,7 @@ New features were created, like `neutralObjkills` which was created to represent
 Those features were created to give us a better understanding of the game while reducing the number of features.
 
 **New Correlation Matrix**:
-![new correlation matrix](.doc/optimized_datasets_correlation.png))
-
+![new correlation matrix](.doc/optimized_datasets_correlation.png)
 To further reduce the time taken during the training process, we used **GPU** **implementation** for those models.
 
 
